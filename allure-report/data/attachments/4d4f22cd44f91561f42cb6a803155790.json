@@ -1,0 +1,8 @@
+{
+  "method": "POST",
+  "url": "https://api.demoblaze.com/signup",
+  "body": {
+    "username": "admin",
+    "password": "Test1234!"
+  }
+}

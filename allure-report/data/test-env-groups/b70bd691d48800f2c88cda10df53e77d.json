@@ -1,1 +1,1 @@
-{"id":"b70bd691d48800f2c88cda10df53e77d","fullName":"devsuproyect:cypress/e2e/petstore-api.cy.js#PetStore API - User CRUD Buscar el usuario creado","name":"Buscar el usuario creado","status":"broken","testResultsByEnv":{"default":"17ede5e170bb249fa86764c9734a091b"}}
+{"id":"b70bd691d48800f2c88cda10df53e77d","fullName":"devsuproyect:cypress/e2e/petstore-api.cy.js#PetStore API - User CRUD Buscar el usuario creado","name":"Buscar el usuario creado","status":"passed","testResultsByEnv":{"default":"69cb9dc79e9e1d194ef3b546515b163d"}}
