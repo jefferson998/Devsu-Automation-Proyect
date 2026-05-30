@@ -10,6 +10,19 @@ on:
       - main
       - master
   workflow_dispatch:
+    inputs:
+      spec:
+        description: 'Prueba a ejecutar'
+        required: true
+        default: 'todas'
+        type: choice
+        options:
+          - todas
+          - demoblaze
+          - demoblaze-api
+          - saucedemo
+          - opencart
+          - petstore-api
 
 jobs:
   test:
@@ -60,7 +73,13 @@ jobs:
           EOF
 
       - name: Run Cypress tests with Allure
-        run: npx cypress run
+        run: |
+          SPEC_INPUT="${{ github.event.inputs.spec }}"
+          if [ -z "$SPEC_INPUT" ] || [ "$SPEC_INPUT" = "todas" ]; then
+            npx cypress run
+          else
+            npx cypress run --spec "cypress/e2e/${SPEC_INPUT}.cy.js"
+          fi
         continue-on-error: true
 
       - name: Upload Cypress videos

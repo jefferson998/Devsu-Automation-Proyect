@@ -2,6 +2,28 @@
 
 Este proyecto contiene pruebas automatizadas de tipo **End-to-End (E2E)** y de **API REST**, desarrolladas con **Cypress 13** e integradas con **Allure Report v3** para la generación de reportes. El pipeline de integración continua está configurado en **GitHub Actions** y publica el reporte automáticamente en **GitHub Pages**.
 
+### 📊 Reporte publicado
+
+El reporte de resultados más reciente está disponible en:
+
+**[https://jefferson998.github.io/Devsu-Automation-Proyect/allure-report/](https://jefferson998.github.io/Devsu-Automation-Proyect/allure-report/)**
+
+---
+
+## Capturas del reporte
+
+### Dashboard general — 12/12 pruebas aprobadas (100%)
+
+![Allure Dashboard](docs/images/allure-dashboard.png)
+
+### Detalle de prueba E2E — Pasos y video adjunto
+
+![Allure E2E Detail](docs/images/allure-datail-e2e.png)
+
+### Detalle de prueba API — Request y Response adjuntos
+
+![Allure API Detail](docs/images/allure-detail-api-example.png)
+
 ---
 
 ## Tabla de contenido
