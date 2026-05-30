@@ -1,0 +1,20 @@
+{
+  "name": "devsuproyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefferson998/Devsu-Automation-Proyect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefferson998/Devsu-Automation-Proyect/issues"
+  },
+  "homepage": "https://github.com/jefferson998/Devsu-Automation-Proyect#readme"
+}
