@@ -186,37 +186,6 @@ El workflow puede ejecutarse manualmente desde GitHub Actions seleccionando la p
 
 ![Ejecución manual workflow_dispatch](docs/images/dispatch.png)
 
-### Configuración de secrets en GitHub
-
-Para que el pipeline funcione correctamente, deben configurarse los siguientes secrets en:  
-**Settings → Secrets and variables → Actions → New repository secret**
-
-| Secret | Descripción |
-|---|---|
-| `DEMOBLAZE_URL` | URL base de DemoBlaze |
-| `DEMOBLAZE_API_URL` | URL de la API de DemoBlaze |
-| `DEMOBLAZE_EXISTING_USER` | Usuario existente para pruebas de login |
-| `DEMOBLAZE_PASSWORD` | Contraseña para pruebas de API |
-| `SAUCEDEMO_URL` | URL base de SauceDemo |
-| `SAUCEDEMO_USER` | Usuario de SauceDemo |
-| `SAUCEDEMO_PASSWORD` | Contraseña de SauceDemo |
-| `OPENCART_URL` | URL base de OpenCart |
-| `PETSTORE_API_URL` | URL base de la API PetStore |
-| `CHECKOUT_FIRST_NAME` | Nombre para formularios de checkout |
-| `CHECKOUT_LAST_NAME` | Apellido para formularios de checkout |
-| `CHECKOUT_EMAIL` | Correo para formularios de checkout |
-| `CHECKOUT_PHONE` | Teléfono para formularios de checkout |
-| `CHECKOUT_ADDRESS` | Dirección para formularios de checkout |
-| `CHECKOUT_CITY` | Ciudad para formularios de checkout |
-| `CHECKOUT_POSTCODE` | Código postal para formularios de checkout |
-| `CHECKOUT_COUNTRY` | País para formularios de checkout |
-| `CHECKOUT_ZONE` | Zona/Departamento para formularios de checkout |
-| `CHECKOUT_CARD` | Número de tarjeta de crédito de prueba |
-| `CHECKOUT_CARD_MONTH` | Mes de vencimiento de la tarjeta |
-| `CHECKOUT_CARD_YEAR` | Año de vencimiento de la tarjeta |
-
----
-
 ## Estructura del proyecto
 
 ```
