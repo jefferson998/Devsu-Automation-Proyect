@@ -30,6 +30,34 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Create cypress.env.json from secrets
+        run: |
+          cat <<EOF > cypress.env.json
+          {
+            "DEMOBLAZE_URL": "${{ secrets.DEMOBLAZE_URL }}",
+            "DEMOBLAZE_API_URL": "${{ secrets.DEMOBLAZE_API_URL }}",
+            "DEMOBLAZE_EXISTING_USER": "${{ secrets.DEMOBLAZE_EXISTING_USER }}",
+            "DEMOBLAZE_PASSWORD": "${{ secrets.DEMOBLAZE_PASSWORD }}",
+            "SAUCEDEMO_URL": "${{ secrets.SAUCEDEMO_URL }}",
+            "SAUCEDEMO_USER": "${{ secrets.SAUCEDEMO_USER }}",
+            "SAUCEDEMO_PASSWORD": "${{ secrets.SAUCEDEMO_PASSWORD }}",
+            "OPENCART_URL": "${{ secrets.OPENCART_URL }}",
+            "PETSTORE_API_URL": "${{ secrets.PETSTORE_API_URL }}",
+            "CHECKOUT_FIRST_NAME": "${{ secrets.CHECKOUT_FIRST_NAME }}",
+            "CHECKOUT_LAST_NAME": "${{ secrets.CHECKOUT_LAST_NAME }}",
+            "CHECKOUT_EMAIL": "${{ secrets.CHECKOUT_EMAIL }}",
+            "CHECKOUT_PHONE": "${{ secrets.CHECKOUT_PHONE }}",
+            "CHECKOUT_ADDRESS": "${{ secrets.CHECKOUT_ADDRESS }}",
+            "CHECKOUT_CITY": "${{ secrets.CHECKOUT_CITY }}",
+            "CHECKOUT_POSTCODE": "${{ secrets.CHECKOUT_POSTCODE }}",
+            "CHECKOUT_COUNTRY": "${{ secrets.CHECKOUT_COUNTRY }}",
+            "CHECKOUT_ZONE": "${{ secrets.CHECKOUT_ZONE }}",
+            "CHECKOUT_CARD": "${{ secrets.CHECKOUT_CARD }}",
+            "CHECKOUT_CARD_MONTH": "${{ secrets.CHECKOUT_CARD_MONTH }}",
+            "CHECKOUT_CARD_YEAR": "${{ secrets.CHECKOUT_CARD_YEAR }}"
+          }
+          EOF
+
       - name: Run Cypress tests with Allure
         run: npx cypress run
         continue-on-error: true

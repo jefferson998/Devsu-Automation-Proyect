@@ -1,6 +1,6 @@
 describe('Flujo de compra E2E - DemoBlaze', () => {
   beforeEach(() => {
-    cy.visit('https://www.demoblaze.com/');
+    cy.visit(Cypress.env('DEMOBLAZE_URL') + '/');
     cy.contains('PRODUCT STORE', { timeout: 10000 }).should('be.visible');
   });
 
@@ -31,12 +31,12 @@ describe('Flujo de compra E2E - DemoBlaze', () => {
     cy.get('#orderModal').should('be.visible');
 
 
-    cy.get('#name').type('Usuario Prueba');
-    cy.get('#country').type('Colombia');
-    cy.get('#city').type('Medellín');
-    cy.get('#card').type('4111111111111111');
-    cy.get('#month').type('12');
-    cy.get('#year').type('2028');
+    cy.get('#name').type(Cypress.env('CHECKOUT_FIRST_NAME') + ' ' + Cypress.env('CHECKOUT_LAST_NAME'));
+    cy.get('#country').type(Cypress.env('CHECKOUT_COUNTRY'));
+    cy.get('#city').type(Cypress.env('CHECKOUT_CITY'));
+    cy.get('#card').type(Cypress.env('CHECKOUT_CARD'));
+    cy.get('#month').type(Cypress.env('CHECKOUT_CARD_MONTH'));
+    cy.get('#year').type(Cypress.env('CHECKOUT_CARD_YEAR'));
 
     cy.contains('Purchase').click();
 
@@ -66,9 +66,9 @@ describe('Flujo de compra E2E - DemoBlaze', () => {
 
     cy.get('.sweet-alert .confirm').click();
 
-    cy.visit('https://www.demoblaze.com/index.html');
+    cy.visit(Cypress.env('DEMOBLAZE_URL') + '/index.html');
 
-    cy.url().should('eq', 'https://www.demoblaze.com/index.html');
+    cy.url().should('eq', Cypress.env('DEMOBLAZE_URL') + '/index.html');
 
   });
 });
