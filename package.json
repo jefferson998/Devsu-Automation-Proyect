@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "npx cypress open"
+    "cypress:open": "npx cypress open",
+    "cypress:run": "cypress run",
+    "allure:generate": "allure generate ./allure-results -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/jefferson998/Devsu-Automation-Proyect/issues"
   },
-  "homepage": "https://github.com/jefferson998/Devsu-Automation-Proyect#readme"
+  "homepage": "https://github.com/jefferson998/Devsu-Automation-Proyect#readme",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "allure-cypress": "^3.2.0",
+    "allure-js-commons": "^3.2.0",
+    "allure": "^3.2.0"
+  }
 }
