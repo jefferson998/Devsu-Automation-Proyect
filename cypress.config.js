@@ -5,6 +5,10 @@ module.exports = defineConfig({
   allowCypressEnv: false,
   video: true,
   videoCompression: 32,
+  retries: {
+    runMode: 2,
+    openMode: 1,
+  },
 
   e2e: {
     setupNodeEvents(on, config) {
