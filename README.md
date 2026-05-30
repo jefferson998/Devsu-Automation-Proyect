@@ -178,6 +178,14 @@ El proyecto incluye un workflow de **GitHub Actions** que se ejecuta automática
 6. Genera el reporte Allure.
 7. Publica el reporte en **GitHub Pages** (rama `gh-pages`).
 
+### Ejecución manual por funcionalidad
+
+El workflow puede ejecutarse manualmente desde GitHub Actions seleccionando la prueba deseada en el campo **"Prueba a ejecutar"**. Esto permite correr una suite específica sin necesidad de hacer un push al repositorio.
+
+**Ruta:** Actions → Cypress Tests & Allure Report → Run workflow
+
+![Ejecución manual workflow_dispatch](docs/images/dispatch.png)
+
 ### Configuración de secrets en GitHub
 
 Para que el pipeline funcione correctamente, deben configurarse los siguientes secrets en:  
