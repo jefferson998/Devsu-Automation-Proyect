@@ -2,7 +2,7 @@
   "method": "POST",
   "url": "https://api.demoblaze.com/login",
   "body": {
-    "username": "testuser_1780164437523",
+    "username": "testuser_1780164568189",
     "password": "Test1234!"
   }
 }
