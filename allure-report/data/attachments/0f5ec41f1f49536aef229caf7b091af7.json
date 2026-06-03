@@ -1,11 +1,11 @@
 {
   "status": 200,
   "body": {
-    "id": 1780165039073,
-    "username": "testuser_1780165039073",
+    "id": 1780451543854,
+    "username": "testuser_1780451543854",
     "firstName": "Juan",
     "lastName": "Perez",
-    "email": "testuser_1780165039073@test.com",
+    "email": "testuser_1780451543854@test.com",
     "password": "Pass1234!",
     "phone": "3001234567",
     "userStatus": 1

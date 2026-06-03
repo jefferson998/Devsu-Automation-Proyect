@@ -1,0 +1,5 @@
+{
+  "method": "DELETE",
+  "url": "https://petstore.swagger.io/v2/user/testuser_1780451543854",
+  "body": null
+}
