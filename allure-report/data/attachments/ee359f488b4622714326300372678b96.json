@@ -1,6 +1,0 @@
-{
-  "status": 200,
-  "body": {
-    "errorMessage": "This user already exist."
-  }
-}

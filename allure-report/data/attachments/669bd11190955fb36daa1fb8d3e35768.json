@@ -1,0 +1,8 @@
+{
+  "method": "POST",
+  "url": "https://api.demoblaze.com/login",
+  "body": {
+    "username": "usuario_que_no_existe_xyz99",
+    "password": "wrongpass"
+  }
+}
