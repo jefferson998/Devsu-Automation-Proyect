@@ -6,7 +6,7 @@ Este proyecto contiene pruebas automatizadas de tipo **End-to-End (E2E)** y de *
 
 El reporte de resultados más reciente está disponible en:
 
-**[https://jefferson998.github.io/Devsu-Automation-Proyect/allure-report/](https://jefferson998.github.io/Devsu-Automation-Proyect/allure-report/)**
+**[https://jefferson998.github.io/Devsu-Automation-Proyect/allure-report/]((https://jefferson998.github.io/Automation-Proyect/allure-report/))**
 
 ---
 
