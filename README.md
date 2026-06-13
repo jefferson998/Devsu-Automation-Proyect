@@ -55,8 +55,8 @@ Antes de ejecutar el proyecto, asegúrese de tener instalado lo siguiente:
 1. Clone el repositorio en su equipo:
 
 ```bash
-git clone https://github.com/jefferson998/Devsu-Automation-Proyect.git
-cd Devsu-Automation-Proyect
+git clone https://github.com/jefferson998/Automation-Proyect.git
+cd Automation-Proyect
 ```
 
 2. Instale las dependencias del proyecto:
